@@ -75,7 +75,7 @@ if (sessionStorage.getItem("visited") == null) {
 
   $(".go-to-game").on("click", function () {
     loadAnim1();
-    document.querySelector("body").style.background = "#ffd0f9";
+    document.querySelector("body").style.background = "#f094e4";
   });
 
   // Wait before playing animation
@@ -306,7 +306,7 @@ if (sessionStorage.getItem("visited") !== null) {
   $(".e_loader").css("z-index", 0);
   $(".splash-wrapper").css("z-index", 0);
   $(".splash-underlay").css("z-index", 0);
-  document.querySelector("body").style.background = "#ffd0f9";
+  document.querySelector("body").style.background = "#f094e4";
 }
 sessionStorage.setItem("visited", "true");
 
