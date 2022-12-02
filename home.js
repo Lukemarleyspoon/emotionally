@@ -75,7 +75,7 @@ if (sessionStorage.getItem("visited") == null) {
 
   $(".go-to-game").on("click", function () {
     loadAnim1();
-    document.querySelector("body").style.background = "#000000";
+    document.querySelector("body").style.background = "#f094e4";
   });
 
   // Wait before playing animation
