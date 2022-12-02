@@ -1,0 +1,80 @@
+/* home */
+
+@supports (-webkit-touch-callout: none) {
+  .splash-screen-1,
+  .splash-wrapper,
+  .content-wrapper-categories,
+  .popup_content_wrapper_1,
+  .popup_content_wrapper_2 {
+    /* for ios safari 15, safe-area-inset-bottom is 0, so a special fix apply here */
+    min-height: -webkit-fill-available;
+    max-height: -webkit-fill-available;
+  }
+  .splash-screen-1 {
+    /* equivalent to 100dvh in major browsers */
+    min-height: calc(
+      100vh - env(safe-area-inset-bottom, 0) - env(safe-area-inset-top, 0)
+    );
+  }
+}
+
+.e_loader {
+  pointer-events: none;
+}
+
+.letter {
+  display: inline-block;
+}
+.tricksword {
+  white-space: nowrap;
+}
+.popup_bg {
+  opacity: 0;
+}
+.popup_item {
+  display: none;
+}
+.popup_item.active {
+  display: block;
+}
+.category-card-link {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.gameplay-wrapper {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  z-index: 50;
+  height: 100vh;
+}
+
+.overlay {
+  pointer-events: none;
+}
+.swiper-pagination-bullet {
+  border-radius: 8px;
+  height: 8px;
+  opacity: 1;
+  background-color: black;
+  opacity: 0.3;
+  transition: all 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.swiper-pagination-bullet-active {
+  background-color: black;
+  border-radius: 8px;
+  opacity: 0.6;
+  width: 40px;
+}
+/* styles for gameplay */
+.placeholder-wrapper,
+.return-overlay {
+  pointer-events: none;
+}
+
+.in-game-level-selection {
+  display: none;
+}
