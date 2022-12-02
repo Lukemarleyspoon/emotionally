@@ -564,7 +564,7 @@ var swiper = new Swiper(".swiper.swiper-category", {
 
 swiper.on("slideChangeTransitionStart", function (e) {
   if (this.activeIndex == 0) {
-    document.querySelector("body").style.background = "#FFD0F9";
+    document.querySelector("body").style.background = "#f094e4";
     gsap.fromTo(
       ".category-title-wrapper",
       {},
